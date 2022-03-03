@@ -1,0 +1,15 @@
+print('='*10,'Bem vindo(a) ao Aprovando Emprestimo!','='*10)
+casa = float(input('Qual é o valor da casa? R$'))
+salario = float(input('Qual é o salário do comprador? R$'))
+anos = int(input('Em quantos anos vai ser pago? : '))
+p = casa / (anos * 12)
+print('A prestação será de {}'.format(p))
+if (salario * 0.30) >= (p):
+    print('Parabéns! O valor foi aprovado!')
+    print('As parcelas serão de R${:.2f}'.format(p))
+    print('A casa será paga em {} anos.'.format(anos))
+else:
+    print('Valor não liberado!')
+    print('Busque uma Casa com menor valor')
+    print('Aumente a renda')
+    print('Ou aumente o prazo de pagamento.')
