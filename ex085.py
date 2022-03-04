@@ -1,17 +1,13 @@
-ls = []
-p = []
-i = []
-ls.append(p)
-ls.append(i)
-print(ls)
-for c in range(0,7):
-    v = int(input('Digite um valor: '))
+ls = [[], []]
+
+for c in range(1, 8):
+    v = int(input(f'Digite o {c}° valor: '))
     if v % 2 == 0:
-        p.append(v)
+        ls[0].append(v)
     else:
-        i.append(v)
-print('-='*50)
-p.sort()
-i.sort()
+        ls[1].append(v)
+print('-='*40)
+ls[0].sort()
+ls[1].sort()
 print(f'Os valores pares digitados foram: {ls[0]}')
-print(f'Os valores impares digitados foram: {ls[1]}')
+print(f'Os valores ímpares digitados foram: {ls[1]}')
