@@ -1,2 +1,2 @@
 # Exercícios Python :snake:
-### Exercícios realizados enquanto realizo o curso de Python do Curso Em Video. 
+### Exercícios realizados enquanto realizei o curso de Python do Curso Em Video. 
